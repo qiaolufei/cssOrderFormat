@@ -1,0 +1,44 @@
+{
+	"name": "css-order-format",
+	"displayName": "css-order-format",
+	"description": "css排序格式化",
+	"keywords": ["css", "order", "format"],
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.63.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:css-order-format.run"
+	],
+	"main": "./src/extension.js",
+	"contributes": {
+		"commands": [{
+			"command": "css-order-format.run",
+			"title": "Hello World"
+		}],
+		"keybindings": [{
+			"command": "css-order-format.run",
+			"key": "shift+q",
+			"mac": "shift+q"
+		}]
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "npm run lint",
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.63.0",
+		"@types/glob": "^7.2.0",
+		"@types/mocha": "^9.0.0",
+		"@types/node": "14.x",
+		"eslint": "^8.6.0",
+		"glob": "^7.2.0",
+		"mocha": "^9.1.3",
+		"typescript": "^4.5.4",
+		"@vscode/test-electron": "^2.0.3"
+	}
+}
